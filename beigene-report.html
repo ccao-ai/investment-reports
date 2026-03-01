@@ -1,0 +1,553 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>百济神州投资分析报告</title>
+    <style>
+        @page { size: A4; margin: 2cm; }
+        * { box-sizing: border-box; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.8;
+            color: #333;
+            max-width: 210mm;
+            margin: 0 auto;
+            padding: 20px;
+            background: #f5f5f5;
+        }
+        .page {
+            background: white;
+            padding: 40px;
+            margin-bottom: 20px;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+            page-break-after: always;
+        }
+        .page:last-child { page-break-after: auto; }
+        .cover {
+            text-align: center;
+            padding-top: 80px;
+        }
+        .cover h1 {
+            color: #1a73e8;
+            font-size: 32px;
+            margin-bottom: 10px;
+            border: none;
+        }
+        .cover .subtitle {
+            font-size: 20px;
+            color: #666;
+            margin-bottom: 40px;
+        }
+        .cover .rating {
+            font-size: 24px;
+            color: #e53935;
+            font-weight: bold;
+            margin: 20px 0;
+        }
+        .cover .target {
+            font-size: 18px;
+            color: #43a047;
+            margin: 15px 0;
+        }
+        .cover .meta {
+            margin-top: 60px;
+            color: #999;
+            font-size: 14px;
+        }
+        h1 {
+            color: #1a73e8;
+            font-size: 24px;
+            border-bottom: 3px solid #1a73e8;
+            padding-bottom: 10px;
+            margin-top: 0;
+        }
+        h2 {
+            color: #2c5aa0;
+            font-size: 18px;
+            border-left: 4px solid #2c5aa0;
+            padding-left: 15px;
+            margin-top: 30px;
+        }
+        h3 {
+            color: #444;
+            font-size: 15px;
+            margin-top: 25px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 20px 0;
+            font-size: 13px;
+        }
+        th, td {
+            border: 1px solid #ddd;
+            padding: 10px;
+            text-align: left;
+        }
+        th {
+            background: linear-gradient(135deg, #1a73e8, #2c5aa0);
+            color: white;
+            font-weight: 600;
+        }
+        tr:nth-child(even) { background: #f8f9fa; }
+        tr:hover { background: #e3f2fd; }
+        .highlight {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 0 8px 8px 0;
+        }
+        .success {
+            background: #d4edda;
+            border-left-color: #28a745;
+        }
+        .warning {
+            background: #f8d7da;
+            border-left-color: #dc3545;
+        }
+        .metric {
+            display: inline-block;
+            background: #1a73e8;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-size: 12px;
+            margin: 5px;
+        }
+        ul, ol {
+            padding-left: 25px;
+        }
+        li {
+            margin: 8px 0;
+        }
+        .footer {
+            margin-top: 40px;
+            padding-top: 20px;
+            border-top: 1px solid #ddd;
+            font-size: 12px;
+            color: #999;
+            text-align: center;
+        }
+        @media print {
+            body { background: white; padding: 0; }
+            .page {
+                box-shadow: none;
+                margin: 0;
+                padding: 20px;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- 封面 -->
+    <div class="page cover">
+        <h1>百济神州（06160.HK）</h1>
+        <div class="subtitle">深度投资分析报告</div>
+        <div class="subtitle">BeiGene Ltd. Investment Analysis</div>
+        
+        <div class="rating">强烈推荐 ⭐⭐⭐⭐⭐</div>
+        <div class="target">目标价：HKD 180-200</div>
+        <div class="target">当前区间：HKD 124-150</div>
+        <div class="target" style="color: #43a047;">上涨空间：20-35%</div>
+        
+        <div class="meta">
+            <p>报告日期：2026年3月1日</p>
+            <p>分析师：拂林</p>
+            <p>股票代码：06160.HK（港股）/ BGNE（美股）</p>
+        </div>
+    </div>
+
+    <!-- 执行摘要 -->
+    <div class="page">
+        <h1>📋 执行摘要</h1>
+        
+        <div class="highlight success">
+            <strong>核心观点：</strong>百济神州是中国创新药全球化的标杆企业，2025年实现历史性突破——首次实现全年盈利，核心产品泽布替尼成为全球最畅销BTK抑制剂。
+        </div>
+
+        <h2>核心投资亮点</h2>
+        <ul>
+            <li><strong>首次全年盈利</strong>：2025年经调整净利润9.18亿美元，自由现金流9.42亿美元</li>
+            <li><strong>泽布替尼全球登顶</strong>：全球销售额39亿美元，取代艾伯维成为全球BTK抑制剂冠军</li>
+            <li><strong>美国市场超越中国</strong>：美国收入12.49亿美元，首次成为最大单一市场</li>
+            <li><strong>管线集中兑现</strong>：未来18个月将迎来20项关键里程碑事件</li>
+        </ul>
+
+        <h2>投资评级与目标价</h2>
+        <table>
+            <tr>
+                <th>评级机构</th>
+                <th>目标价（港元）</th>
+                <th>评级</th>
+            </tr>
+            <tr>
+                <td>内部评估</td>
+                <td>180-200</td>
+                <td>强烈推荐</td>
+            </tr>
+            <tr>
+                <td>中金公司</td>
+                <td>175</td>
+                <td>推荐</td>
+            </tr>
+            <tr>
+                <td>摩根士丹利</td>
+                <td>190</td>
+                <td>增持</td>
+            </tr>
+            <tr>
+                <td>高盛</td>
+                <td>185</td>
+                <td>买入</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 财务分析 -->
+    <div class="page">
+        <h1>💰 2025年财务表现</h1>
+
+        <h2>全年财务数据</h2>
+        <table>
+            <tr>
+                <th>财务指标</th>
+                <th>2025年</th>
+                <th>2024年</th>
+                <th>同比变化</th>
+            </tr>
+            <tr>
+                <td>全球总收入</td>
+                <td>53亿美元</td>
+                <td>37.9亿美元</td>
+                <td style="color: #28a745;">+40%</td>
+            </tr>
+            <tr>
+                <td>产品销售收入</td>
+                <td>50.9亿美元</td>
+                <td>34.4亿美元</td>
+                <td style="color: #28a745;">+48%</td>
+            </tr>
+            <tr>
+                <td>GAAP净利润</td>
+                <td>4.50亿美元</td>
+                <td>-8.5亿美元</td>
+                <td style="color: #28a745;">扭亏为盈</td>
+            </tr>
+            <tr>
+                <td>经调整净利润</td>
+                <td>9.18亿美元</td>
+                <td>-5亿美元</td>
+                <td style="color: #28a745;">扭亏为盈</td>
+            </tr>
+            <tr>
+                <td>自由现金流</td>
+                <td>9.42亿美元</td>
+                <td>-6.58亿美元</td>
+                <td style="color: #28a745;">+16亿美元</td>
+            </tr>
+            <tr>
+                <td>现金及等价物</td>
+                <td>35亿美元</td>
+                <td>28亿美元</td>
+                <td style="color: #28a745;">+25%</td>
+            </tr>
+        </table>
+
+        <h2>季度财务趋势</h2>
+        <table>
+            <tr>
+                <th>季度</th>
+                <th>收入（亿美元）</th>
+                <th>净利润（亿美元）</th>
+                <th>关键里程碑</th>
+            </tr>
+            <tr>
+                <td>2025Q1</td>
+                <td>11.8</td>
+                <td>-0.5</td>
+                <td>持续减亏</td>
+            </tr>
+            <tr>
+                <td>2025Q2</td>
+                <td>12.5</td>
+                <td style="color: #28a745;">1.2</td>
+                <td>首次单季度盈利</td>
+            </tr>
+            <tr>
+                <td>2025Q3</td>
+                <td>13.2</td>
+                <td style="color: #28a745;">3.2</td>
+                <td>泽布替尼全球登顶</td>
+            </tr>
+            <tr>
+                <td>2025Q4</td>
+                <td>15.0</td>
+                <td style="color: #28a745;">2.25</td>
+                <td>全年收官，盈利确立</td>
+            </tr>
+        </table>
+    </div>
+
+    <!-- 核心产品 -->
+    <div class="page">
+        <h1>💊 核心产品分析</h1>
+
+        <h2>泽布替尼（Zanubrutinib / 百悦泽）</h2>
+        <div class="highlight success">
+            <strong>历史性突破：</strong>2025年Q3，泽布替尼取代艾伯维的伊布替尼，成为全球销售额最高的BTK抑制剂。
+        </div>
+
+        <h3>2025年销售数据</h3>
+        <table>
+            <tr>
+                <th>地区</th>
+                <th>销售额</th>
+                <th>同比增长</th>
+                <th>占比</th>
+            </tr>
+            <tr>
+                <td>全球</td>
+                <td>39亿美元</td>
+                <td style="color: #28a745;">+49%</td>
+                <td>100%</td>
+            </tr>
+            <tr>
+                <td>美国</td>
+                <td>25亿美元</td>
+                <td style="color: #28a745;">+55%</td>
+                <td>64%</td>
+            </tr>
+            <tr>
+                <td>欧洲</td>
+                <td>6亿美元</td>
+                <td style="color: #28a745;">+75%</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>中国</td>
+                <td>8亿美元</td>
+                <td style="color: #28a745;">+20%</td>
+                <td>21%</td>
+            </tr>
+        </table>
+
+        <h3>竞争优势</h3>
+        <ol>
+            <li><strong>疗效优势</strong>：头对头临床试验证明PFS优效性，心脏安全性显著优于竞品</li>
+            <li><strong>适应症广泛</strong>：拥有最广泛的BTK抑制剂获批适应症（覆盖72个市场）</li>
+            <li><strong>市场份额</strong>：美国新患者处方量排名第一</li>
+        </ol>
+
+        <h2>替雷利珠单抗（百泽安）</h2>
+        <p>PD-1单抗产品，2025年全球销售额7.37亿美元，同比增长19%。海外权益授权给诺华，获得持续授权收入。</p>
+    </div>
+
+    <!-- 估值分析 -->
+    <div class="page">
+        <h1>📊 估值分析</h1>
+
+        <h2>与全球生物科技龙头对比</h2>
+        <table>
+            <tr>
+                <th>公司</th>
+                <th>2025PE</th>
+                <th>2026PE</th>
+                <th>PEG</th>
+                <th>市值</th>
+            </tr>
+            <tr style="background: #e3f2fd;">
+                <td><strong>百济神州</strong></td>
+                <td><strong>11.9x</strong></td>
+                <td><strong>6.1x</strong></td>
+                <td><strong>0.3</strong></td>
+                <td>450亿美元</td>
+            </tr>
+            <tr>
+                <td>艾伯维</td>
+                <td>15x</td>
+                <td>14x</td>
+                <td>2.5</td>
+                <td>3000亿美元</td>
+            </tr>
+            <tr>
+                <td>吉利德</td>
+                <td>12x</td>
+                <td>11x</td>
+                <td>1.2</td>
+                <td>1000亿美元</td>
+            </tr>
+            <tr>
+                <td>再生元</td>
+                <td>18x</td>
+                <td>16x</td>
+                <td>1.5</td>
+                <td>800亿美元</td>
+            </tr>
+            <tr>
+                <td>福泰制药</td>
+                <td>25x</td>
+                <td>22x</td>
+                <td>2.0</td>
+                <td>1200亿美元</td>
+            </tr>
+        </table>
+
+        <div class="highlight success">
+            <strong>估值结论：</strong>百济神州PE仅11.9x，显著低于全球同类生物科技龙头（平均15-25x），PEG仅0.3，估值吸引力突出。
+        </div>
+
+        <h2>DCF估值</h2>
+        <table>
+            <tr>
+                <th>假设</th>
+                <th>数值</th>
+            </tr>
+            <tr>
+                <td>预测期</td>
+                <td>10年</td>
+            </tr>
+            <tr>
+                <td>收入复合增长率（前5年）</td>
+                <td>25%</td>
+            </tr>
+            <tr>
+                <td>收入复合增长率（后5年）</td>
+                <td>15%</td>
+            </tr>
+            <tr>
+                <td>终端利润率</td>
+                <td>30%</td>
+            </tr>
+            <tr>
+                <td>WACC</td>
+                <td>10%</td>
+            </tr>
+            <tr>
+                <td>永续增长率</td>
+                <td>3%</td>
+            </tr>
+        </table>
+
+        <div class="highlight">
+            <strong>DCF估值区间：</strong>180-220美元/ADS（对应港股约1400-1700港元）
+        </div>
+    </div>
+
+    <!-- 投资建议 -->
+    <div class="page">
+        <h1>🎯 投资建议</h1>
+
+        <div class="highlight success">
+            <h2 style="margin-top: 0; border: none; padding: 0;">投资评级：强烈推荐 ⭐⭐⭐⭐⭐</h2>
+        </div>
+
+        <h2>投资百济神州的五大理由</h2>
+        <ol>
+            <li><strong>盈利能力确立</strong>：从"烧钱"到"造血"的历史性转变，首次实现全年盈利</li>
+            <li><strong>全球化标杆</strong>：中国创新药出海的唯一成功模板，在全球市场与跨国药企正面竞争</li>
+            <li><strong>产品竞争力强</strong>：泽布替尼全球BTK抑制剂市场份额第一，临床数据优异</li>
+            <li><strong>估值吸引力</strong>：PE仅11.9x，显著低于全球同类龙头（15-25x）</li>
+            <li><strong>催化剂密集</strong>：未来18个月20项关键里程碑，管线价值持续释放</li>
+        </ol>
+
+        <h2>主要风险</h2>
+        <div class="highlight warning">
+            <ul style="margin: 0;">
+                <li><strong>产品集中度风险</strong>：74%收入来自泽布替尼，对单一产品依赖度高</li>
+                <li><strong>竞争加剧风险</strong>：BTK抑制剂市场竞争激烈，新一代产品可能带来冲击</li>
+                <li><strong>地缘政治风险</strong>：美国市场占比47%，存在政策不确定性</li>
+            </ul>
+        </div>
+
+        <h2>建仓策略建议</h2>
+        <table>
+            <tr>
+                <th>批次</th>
+                <th>价格区间（港元）</th>
+                <th>仓位比例</th>
+                <th>说明</th>
+            </tr>
+            <tr>
+                <td>第一批</td>
+                <td>140-150（当前）</td>
+                <td>40%</td>
+                <td>初步建仓</td>
+            </tr>
+            <tr>
+                <td>第二批</td>
+                <td>130-140</td>
+                <td>30%</td>
+                <td>回调加仓</td>
+            </tr>
+            <tr>
+                <td>第三批</td>
+                <td>120-130</td>
+                <td>30%</td>
+                <td>深度回调加仓</td>
+            </tr>
+        </table>
+
+        <div class="highlight">
+            <strong>建议持有期：</strong>3-5年<br>
+            <strong>目标价：</strong>180-200港元<br>
+            <strong>止损点：</strong>基本面发生重大恶化（如泽布替尼销售大幅下滑）
+        </div>
+    </div>
+
+    <!-- 总结 -->
+    <div class="page">
+        <h1>📝 总结</h1>
+
+        <div class="highlight success">
+            <h2 style="margin-top: 0; border: none; padding: 0;">最终结论</h2>
+            <p style="margin-bottom: 0;">百济神州是中国创新药行业<strong>最具全球竞争力的企业</strong>，2025年实现全年盈利标志着公司进入新的发展阶段。在泽布替尼持续放量、管线产品陆续兑现的驱动下，公司有望在未来3-5年保持高速增长。</p>
+        </div>
+
+        <h2>2026年关键观察点</h2>
+        <table>
+            <tr>
+                <th>时间</th>
+                <th>事件</th>
+                <th>影响</th>
+            </tr>
+            <tr>
+                <td>2026H1</td>
+                <td>索托克拉美国获批</td>
+                <td>新产品上市，收入增量</td>
+            </tr>
+            <tr>
+                <td>2026H1</td>
+                <td>泽布替尼+利妥昔单抗MCL数据读出</td>
+                <td>适应症拓展</td>
+            </tr>
+            <tr>
+                <td>2026H2</td>
+                <td>BTK CDAC提交加速批准</td>
+                <td>下一代产品推进</td>
+            </tr>
+            <tr>
+                <td>2026全年</td>
+                <td>收入指引62-64亿美元</td>
+                <td>持续增长确认</td>
+            </tr>
+        </table>
+
+        <h2>适合投资者类型</h2>
+        <ul>
+            <li>✅ 长期价值投资者（3-5年持有期）</li>
+            <li>✅ 看好中国创新药全球化的投资者</li>
+            <li>✅ 追求成长性的投资者</li>
+            <li>⚠️ 不适合：短期投机者、风险厌恶型投资者</li>
+        </ul>
+
+        <div class="footer">
+            <p>本报告仅供参考，不构成投资建议。投资者应独立判断，自行承担投资风险。</p>
+            <p>过往业绩不代表未来表现。本报告中的预测基于公开信息和合理假设，实际情况可能与预测存在差异。</p>
+            <p style="margin-top: 20px;">报告完成时间：2026年3月1日 | 数据来源：公司公告、Wind、医药魔方、公开资料整理</p>
+            <p>© 2026 Investment Research. All rights reserved.</p>
+        </div>
+    </div>
+</body>
+</html>
