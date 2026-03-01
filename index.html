@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>投资分析报告 - 拂林的研究</title>
+    <style>
+        * { box-sizing: border-box; margin: 0; padding: 0; }
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Microsoft YaHei", sans-serif;
+            line-height: 1.6;
+            color: #333;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            min-height: 100vh;
+            padding: 40px 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+        }
+        header {
+            text-align: center;
+            color: white;
+            margin-bottom: 40px;
+        }
+        header h1 {
+            font-size: 2.5em;
+            margin-bottom: 10px;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.2);
+        }
+        header p {
+            font-size: 1.2em;
+            opacity: 0.9;
+        }
+        .report-card {
+            background: white;
+            border-radius: 16px;
+            padding: 30px;
+            margin-bottom: 30px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .report-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 15px 50px rgba(0,0,0,0.3);
+        }
+        .report-header {
+            display: flex;
+            align-items: center;
+            margin-bottom: 20px;
+        }
+        .icon {
+            width: 60px;
+            height: 60px;
+            background: linear-gradient(135deg, #1a73e8, #2c5aa0);
+            border-radius: 12px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            margin-right: 20px;
+            font-size: 28px;
+        }
+        .report-title h2 {
+            color: #1a73e8;
+            font-size: 1.5em;
+            margin-bottom: 5px;
+        }
+        .report-title .date {
+            color: #666;
+            font-size: 0.9em;
+        }
+        .rating {
+            display: inline-block;
+            background: #e53935;
+            color: white;
+            padding: 5px 15px;
+            border-radius: 20px;
+            font-weight: bold;
+            font-size: 0.9em;
+            margin-bottom: 15px;
+        }
+        .highlights {
+            background: #f8f9fa;
+            border-radius: 8px;
+            padding: 20px;
+            margin: 20px 0;
+        }
+        .highlights h3 {
+            color: #2c5aa0;
+            margin-bottom: 15px;
+            font-size: 1.1em;
+        }
+        .highlights ul {
+            list-style: none;
+            padding: 0;
+        }
+        .highlights li {
+            padding: 8px 0;
+            padding-left: 25px;
+            position: relative;
+        }
+        .highlights li:before {
+            content: "✓";
+            position: absolute;
+            left: 0;
+            color: #28a745;
+            font-weight: bold;
+        }
+        .metrics {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+            gap: 15px;
+            margin: 20px 0;
+        }
+        .metric {
+            text-align: center;
+            padding: 15px;
+            background: linear-gradient(135deg, #667eea, #764ba2);
+            color: white;
+            border-radius: 8px;
+        }
+        .metric-value {
+            font-size: 1.5em;
+            font-weight: bold;
+            display: block;
+        }
+        .metric-label {
+            font-size: 0.85em;
+            opacity: 0.9;
+        }
+        .btn {
+            display: inline-block;
+            background: linear-gradient(135deg, #1a73e8, #2c5aa0);
+            color: white;
+            padding: 12px 30px;
+            border-radius: 25px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: transform 0.2s, box-shadow 0.2s;
+            margin-top: 15px;
+        }
+        .btn:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 5px 20px rgba(26, 115, 232, 0.4);
+        }
+        footer {
+            text-align: center;
+            color: white;
+            margin-top: 40px;
+            opacity: 0.8;
+        }
+        .tags {
+            margin-top: 15px;
+        }
+        .tag {
+            display: inline-block;
+            background: #e3f2fd;
+            color: #1a73e8;
+            padding: 3px 10px;
+            border-radius: 15px;
+            font-size: 0.85em;
+            margin-right: 8px;
+            margin-bottom: 5px;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📊 投资分析报告</h1>
+            <p>由 拂林 精心制作的研究报告</p>
+        </header>
+
+        <div class="report-card">
+            <div class="report-header">
+                <div class="icon">💊</div>
+                <div class="report-title">
+                    <h2>百济神州（06160.HK）深度投资分析报告</h2>
+                    <div class="date">报告日期：2026年3月1日</div>
+                </div>
+            </div>
+
+            <div class="rating">强烈推荐 ⭐⭐⭐⭐⭐</div>
+
+            <div class="tags">
+                <span class="tag">港股创新药</span>
+                <span class="tag">生物医药</span>
+                <span class="tag">全球化</span>
+                <span class="tag">扭亏为盈</span>
+            </div>
+
+            <div class="highlights">
+                <h3>🎯 核心投资亮点</h3>
+                <ul>
+                    <li>首次全年盈利：2025年经调整净利润9.18亿美元</li>
+                    <li>泽布替尼全球登顶：全球销售额39亿美元，BTK抑制剂冠军</li>
+                    <li>美国市场超越中国：美国收入12.49亿美元（+50%）</li>
+                    <li>管线集中兑现：未来18个月20项关键里程碑</li>
+                </ul>
+            </div>
+
+            <div class="metrics">
+                <div class="metric">
+                    <span class="metric-value">53亿美元</span>
+                    <span class="metric-label">2025年营收</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">+40%</span>
+                    <span class="metric-label">同比增长</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">180-200</span>
+                    <span class="metric-label">目标价（港元）</span>
+                </div>
+                <div class="metric">
+                    <span class="metric-value">20-35%</span>
+                    <span class="metric-label">上涨空间</span>
+                </div>
+            </div>
+
+            <a href="百济神州投资分析报告.html" class="btn">📖 阅读完整报告</a>
+        </div>
+
+        <div class="report-card">
+            <div class="report-header">
+                <div class="icon" style="background: linear-gradient(135deg, #43a047, #2e7d32);">📈</div>
+                <div class="report-title">
+                    <h2>港股创新药板块2025年投资分析报告</h2>
+                    <div class="date">报告日期：2026年3月1日</div>
+                </div>
+            </div>
+
+            <div class="rating" style="background: #43a047;">板块分析 ⭐⭐⭐⭐</div>
+
+            <div class="tags">
+                <span class="tag">行业研究</span>
+                <span class="tag">板块分析</span>
+                <span class="tag">多标的覆盖</span>
+            </div>
+
+            <div class="highlights">
+                <h3>📊 板块核心数据</h3>
+                <ul>
+                    <li>恒生医疗保健指数全年涨幅102.76%</li>
+                    <li>出海BD交易金额1356.55亿美元，占全球49%</li>
+                    <li>多家龙头企业实现扭亏为盈</li>
+                    <li>覆盖百济神州、信达生物、翰森制药等龙头</li>
+                </ul>
+            </div>
+
+            <a href="港股创新药投资分析报告_2025.html" class="btn" style="background: linear-gradient(135deg, #43a047, #2e7d32);">📖 阅读完整报告</a>
+        </div>
+
+        <footer>
+            <p>© 2026 投资研究 | 数据仅供参考，不构成投资建议</p>
+            <p style="margin-top: 10px; font-size: 0.9em;">使用 Tavily AI 搜索 + 财务分析技能生成</p>
+        </footer>
+    </div>
+</body>
+</html>
